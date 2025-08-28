@@ -1,3 +1,3 @@
 # Mon IP
 
-docker run --rm --name mon-ip -p 80:8091 monip:latest
+docker run -d --name mon-ip --restart unless-stopped -p 80:8091 monip:latest
